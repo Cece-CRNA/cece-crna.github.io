@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #f8f6f1;
+  --foreground: #1d2a44;
+  --navy: #16233a;
+  --midnight: #0f1a2b;
+  --champagne: #c9ab78;
+  --stone: #6b7484;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top right, #ffffff, #f8f6f1 55%);
+  color: var(--foreground);
+}
+
+.luxury-card {
+  @apply rounded-2xl border border-[#e2dccf] bg-white/80 shadow-[0_20px_60px_rgba(17,28,45,0.08)] backdrop-blur;
+}
+
+.section-wrap {
+  @apply mx-auto max-w-6xl px-6 py-20 md:px-10;
+}
+
+.h1-luxury {
+  @apply font-serif text-4xl leading-tight md:text-6xl;
+}
+
+.h2-luxury {
+  @apply font-serif text-3xl leading-tight md:text-5xl;
+}
+
+.text-muted {
+  @apply text-[#586172];
+}
+
+.gold-divider {
+  @apply h-px w-20 bg-gradient-to-r from-transparent via-[#c9ab78] to-transparent;
+}
+
+
+.font-serif { font-family: 'Iowan Old Style', 'Garamond', 'Times New Roman', serif; }
+.font-sans { font-family: 'Inter', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
